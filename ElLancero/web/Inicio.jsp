@@ -14,7 +14,7 @@
               
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>EL LANCERO</title>
+        <title>EL LANCERO LO MEJOR EN ARMAS</title>
     </head>
     <body>
         <form action="Inicio" method="POST">
