@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-    
+
 <head>
   <title>El Lancero</title>
   <meta name="description" content="website description" />
@@ -13,19 +13,7 @@
 
 <body>
   <div id="main">
-    <header>
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.jsp">El Lancero<span class="logo_colour"> Armas, Accesorios y Más</span></a></h1>
-          <h2>El Salvador</h2>
-        </div>
-      </div>            
-      <nav> 
-          <ul class="sf-menu" id="nav">
-          </ul>
-      </nav>
-    </header>
+   <%@include file="Encabezado.jsp"%>
     <div id="site_content">
       <ul id="images">
         <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
@@ -37,32 +25,54 @@
       </ul>
       <div id="sidebar_container">
         <div class="sidebar">
-          <h3>Acesso</h3>
-          <form action="form" method="POST">
-              <table border="0">
-                  <tbody>
-                      <tr>
-                          <td>Usuario: </td>
-                          <td><input type="text" name="usuario" value="" /></td>
-                      </tr>
-                      <tr>
-                          <td>Contraseña: </td>
-                          <td><input type="password" name="contraseña" value="" /></td>
-                      </tr>
-                      <tr>
-                          <td><input type="button" value="Ingresar" onclick="location.href='Inicio.jsp'" /></td>
-                          <td><a href="RegistrarEmpleado.jsp">Registrarse</a></td>
-                      </tr>
-                  </tbody>
-              </table>
-          </form>        
+    
         </div>
       </div>
       <div class="content">
-        <h1>Control de inventario</h1>
-        <p>Sistema de control y manejo de inventario El Lancero S.A de C.V</p>
-        <p></p>
-        <p></p>        
+        <h3>Control de inventario</h3>
+        <form action="enviar" method="POST">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Seleccione sucursal</td>
+                        <td><th><select name="NombreSucursal">
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select></th></td>
+                    </tr>
+                    
+                    <tr>
+                          <td>C&oacute;digo</td>
+                          <td><input type="text" name="CodigoArma" value="" /></td>
+                      </tr>
+
+                          <td>Cantidad</td>
+                          <td><input type="text" name="Cantidad" value="" /></td>
+                      </tr>
+                      <tr>
+                          <td>Descripci&oacute;n</td>
+                          <td><input type="text" name="Descripción" value="" /></td>
+                      </tr>
+                      <tr>
+                          <td>Fecha de Ingreso</td>
+                          <td><input type="text" name="FechadeIngreso" value="" /></td>
+                      </tr>
+                      <tr>
+                          <td>Fecha de Salida</td>
+                          <td><input type="text" name="FechadeSalida" value="" /></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><input type="button" value="Generar" name="GenerarPedido" /></td>
+                          <td><input type="submit" value="Cancelar" name="Cancelar" /></td>
+                      </tr>
+                </tbody>
+            </table>
+        </form>
+    
       </div>
     </div>
     <footer>

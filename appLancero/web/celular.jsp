@@ -22,25 +22,7 @@
         </div>
       </div>
       <nav>        
-          <ul class="sf-menu" id="nav">
-          <li class="selected"><a href="index.jsp">Inicio</a></li>
-          <li><a href="empresa.jsp">Nuestra Empresa</a></li>
-          <li><a href="#">Catalogo</a>
-             <ul>
-                <a href="armas.jsp">Armas</a>
-                <a href="municiones.jsp">Municiones</a>
-                <a href="accesorios.jsp">Accesorios</a>
-             </ul>
-          <li><a href="#">Servicios</a>
-            <ul>
-                <li><a href="#">Reservas en Línea</a>
-                    <ul>
-                        <a href="rsvarmas.jsp">Reservar Armas</a>
-                        <a href="rsvmuniciones.jsp">Rerservar Municiones</a>
-                        <a href="rsvaccesorios.jsp">Reservar Accesorios</a>
-                    </ul>
-            </ul>
-          <li><a href="contactenos.jsp">Contactenos</a></li>              
+          <ul class="sf-menu" id="nav">           
           </ul>        
       </nav>
     </header>
