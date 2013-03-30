@@ -35,13 +35,13 @@
                 <tbody>
                     <tr>
                         <td>Seleccione sucursal</td>
-                        <td><th><select name="NombreSucursal">
+                        <td><select name="NombreSucursal">
                                 <option></option>
                                 <option></option>
                                 <option></option>
                                 <option></option>
                                 <option></option>
-                            </select></th></td>
+                            </select></td>
                     </tr>
                     
                     <tr>

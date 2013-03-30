@@ -47,7 +47,7 @@
                     <td><input type="text" name="CodigoProducto" value="" /></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Eliminar" /></td>
+                    <td><input type="button" value="Eliminar" /></td>
                     <td><input type="submit" value="Cancelar" /></td>
                 </tr>
             </tbody>
