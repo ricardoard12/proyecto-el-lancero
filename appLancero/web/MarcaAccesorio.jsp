@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="content">
-          <h3>Registrar Accesorios</h3>         
+          <h3>Registrar Marca</h3>         
           <form action="enviar" method="POST">
               <table border="0">
                   <tbody>
@@ -38,43 +38,19 @@
                           <td><input type="text" name="CodigoAccesorio" value="" /></td>
                       </tr>
                       <tr>
-                          <td><font color="red">*</font>Marca</td>
-                          <td><input type="button" value="Agregar Marca" onclick="location.href='MarcaAccesorio.jsp'" /></td>
+                          <td><font color="red">*</font>Nombre</td>
+                          <td><input type="text" name="NombreMarca" value="" /></td>
                       </tr>
                       <tr>
-                          <td><font color="red">*</font>Tipo</td>
-                          <td><select name="TipoAccesorio">
-                                  <option></option>
+                          <td><font color="red">*</font>Seleccione Pais de Origen</td>
+                          <td><select name="PaisOrigen">
                                   <option></option>
                                   <option></option>
                                   <option></option>
                               </select></td>
                       </tr>
                       <tr>
-                          <td><font color="red">*</font>Talla</td>
-                          <td><select name="TallaAccesorio">
-                                  <option></option>
-                                  <option></option>
-                                  <option></option>
-                                  <option></option>
-                              </select></td>
-                      </tr>
-                      <tr>
-                          <td><font color="red">*</font>Color</td>
-                          <td><select name="ColorAccesorio">
-                                  <option></option>
-                                  <option></option>
-                                  <option></option>
-                                  <option></option>
-                              </select></td>
-                      </tr>
-                      <tr>
-                          <td><font color="red">*</font>Precio</td>
-                          <td><input type="text" name="PrecioAccesorio" value="" /></td>
-                      </tr>
-                      <tr>
-                          <td><input type="button" value="Registrar" /></td>
-                          <td><input type="submit" value="Cancelar" /></td>
+                          <td><input type="button" value="Guardar"onclick="location.href='RegistrarAccesorio.jsp'" /></td>
                       </tr>
                   </tbody>
               </table>

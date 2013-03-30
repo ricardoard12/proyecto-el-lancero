@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -12,7 +13,19 @@
 
 <body>
   <div id="main">
-   <%@include file="Encabezado.jsp"%>
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">El Lancero<span class="logo_colour"> Armas, Accesorios y Más</span></a></h1>
+          <h2>El Salvador</h2>
+        </div>
+      </div>
+      <nav>        
+          <ul class="sf-menu" id="nav">           
+          </ul>        
+      </nav>
+    </header>
     <div id="site_content">
       <ul id="images">
         <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
@@ -21,41 +34,23 @@
         <li><img src="images/4.jpg" width="600" height="300" alt="seascape_four" /></li>
         <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
         <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
-      </ul>
-      <div id="sidebar_container">
-        <div class="sidebar">
-    
-        </div>
-      </div>
+      </ul>      
       <div class="content">
-        <h3>Generar Reporte de Reserva</h3>
-        <form action="enviar" method="POST">
-            <table border="0">
-                <tbody>
-                    <tr>
-                        <td>Seleccione producto</td>
-                        <td><select name="NombreSucursal">
-                                <option>Arma</option>
-                                <option>Municion</option>
-                                <option>Accesorio</option>
-                            </select></td>
-                    </tr>
-                    
-                    <tr>
-                          <td>C&oacute;digo</td>
-                          <td><input type="text" name="CodigoArma" value="" /></td>
-                      </tr>                        
-                          <td>Fecha</td>
-                          <td><input type="text" name="Fecha" value="" /></td>
-                      </tr>
-                     
+          <h3>Ingresar Dirección</h3>         
+          <form action="enviar" method="POST">
+              <table border="0">
+                  <tbody>
                       <tr>
-                          <td><input type="button" value="Generar" name="GenerarPedido" /></td>
-                          <td><input type="submit" value="Cancelar" name="Cancelar" /></td>
+                          <td>Direccion 1: </td>
+                          <td><input type="text" name="nombre" value="" /> Principal</td>
                       </tr>
-            </table>
-        </form>
-    
+                      <tr>
+                          <td><input type="button" value="Guardar" onClick="location.href='registrarse.jsp'"/> </td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>          
+          </form>
       </div>
     </div>
     <footer>

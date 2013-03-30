@@ -34,11 +34,15 @@
               <table border="0">
                   <tbody>
                       <tr>
-                          <td>Codigo</td>
+                          <td><font color="red">*</font>C&oacute;digo</td>
                           <td><input type="text" name="CodigoArma" value="" /></td>
                       </tr>
                       <tr>
-                          <td>Modelo</td>
+                          <td><font color="red">*</font>Marca</td>
+                          <td><input type="button" value="Agregar Marca" onclick="location.href='MarcaArma.jsp'" /></td>
+                      </tr>
+                      <tr>
+                          <td><font color="red">*</font>Modelo</td>
                           <td><select name="ModeloArma">
                                   <option></option>
                                   <option></option>
@@ -49,11 +53,11 @@
                               </select></td>
                       </tr>
                       <tr>
-                          <td>Nº serie</td>
+                          <td><font color="red">*</font>Nº serie</td>
                           <td><input type="text" name="NumeroSerie" value="" /></td>
                       </tr>
                       <tr>
-                          <td>Color</td>
+                          <td><font color="red">*</font>Color</td>
                           <td><select name="ColorArma">
                                   <option></option>
                                   <option></option>
@@ -62,15 +66,15 @@
                               </select></td>
                       </tr>
                       <tr>
-                          <td>Cañon</td>
+                          <td><font color="red">*</font>Cañon</td>
                           <td><input type="text" name="CañonArma" value="" /></td>
                       </tr>
                       <tr>
-                          <td>Nº balisitca</td>
+                          <td><font color="red">*</font>Nº balisitca</td>
                           <td><input type="text" name="NumeroBalistica" value="" /></td>
                       </tr>
                       <tr>
-                          <td>Precio</td>
+                          <td><font color="red">*</font>Precio</td>
                           <td><input type="text" name="PrecioArma" value="" /></td>
                       </tr>
                       <tr>
@@ -79,7 +83,7 @@
                       </tr>
                   </tbody>
               </table>
-
+              <p>Campos Obligatorios *</p>
           </form>
       </div>
     </div>

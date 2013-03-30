@@ -34,11 +34,15 @@
               <table border="0">
                   <tbody>
                       <tr>
-                          <td>Codigo</td>
+                          <td><font color="red">*</font>C&oacute;digo</td>
                           <td><input type="text" name="CodigoMunición" value="" /></td>
                       </tr>
                       <tr>
-                          <td>Calibre</td>
+                          <td><font color="red">*</font>Marca</td>
+                          <td><input type="button" value="Agregar Marca" onclick="location.href='MarcaMunicion.jsp'" /></td>
+                      </tr>
+                      <tr>
+                          <td><font color="red">*</font>Calibre</td>
                           <td><select name="CalibreMunicion">
                                   <option></option>
                                   <option></option>
@@ -51,15 +55,16 @@
                               </select></td>
                       </tr>
                       <tr>
-                          <td>Precio</td>
+                          <td><font color="red">*</font>Precio</td>
                           <td><input type="text" name="PrecioMunición" value="" /></td>
                       </tr>
                       <tr>
-                          <td><input type="submit" value="Registrar" /></td>
+                          <td><input type="button" value="Registrar" /></td>
                           <td><input type="submit" value="Cancelar" /></td>
                       </tr>
                   </tbody>
               </table>
+              <p>Campos Obligatorios *</p>
           </form>
       </div>
     </div>
