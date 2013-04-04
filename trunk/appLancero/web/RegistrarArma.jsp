@@ -38,8 +38,12 @@
                           <td><input type="text" name="CodigoArma" value="" /></td>
                       </tr>
                       <tr>
+                          <td><font color="red">*</font>Tipo</td>
+                          <td></td>
+                      </tr>
+                      <tr>
                           <td><font color="red">*</font>Marca</td>
-                          <td><input type="button" value="Agregar Marca" onclick="location.href='MarcaArma.jsp'" /></td>
+                          <td></td>
                       </tr>
                       <tr>
                           <td><font color="red">*</font>Modelo</td>
