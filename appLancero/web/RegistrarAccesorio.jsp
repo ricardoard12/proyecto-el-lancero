@@ -39,7 +39,7 @@
                       </tr>
                       <tr>
                           <td><font color="red">*</font>Marca</td>
-                          <td><input type="button" value="Agregar Marca" onclick="location.href='MarcaAccesorio.jsp'" /></td>
+                          <td></td>
                       </tr>
                       <tr>
                           <td><font color="red">*</font>Tipo</td>
