@@ -33,26 +33,61 @@
             <table border="0">
                 <tbody>
                                        
-                    <tr>
-                          <td>C&oacute;digo de Cliente</td>
-                          <td><input type="text" name="CodigoArma" value="" /></td>
-                      </tr>
+                   <tr>
+                         <td><font color="red">*</font>Sucursal</td>
+                        <td><select name="NombreSucursal">
+                                 <option>Seleccione...</option>
+                                 <option>Casa Matriz</option>
+                                <option>Col. San Francisco</option>
+                                <option>Soyapango</option>
+                                <option>Col. Escal&oacute;n</option>
+                                <option></option>
+                            </select></td>
+                    </tr>
                        
                       <tr>
-                          <td>Nombre</td>
-                          <td><input type="text" name="CodigoArma" value="" /></td>
-                      </tr>
-                         
-                          <td>Fecha</td>
-                          <td><input type="text" name="Fecha" value="" /></td>
-                      </tr>
+                         <td><font color="red">*</font>Reportes</td>
+                        <td><select name="NombreSucursal">
+                                 <option>Seleccione...</option>
+                                 <option>Compras realizadas</option>
+                                <option>Cantidad de Reservas</option>
+                                <option>Reservas solicitadas</option>
+                                <option>Reparaciones</option>
+                                <option>Mayor demanda</option>
+                                <option>Menor demanda</option>
+                            </select></td>
+                    </tr>
                      
-                      <tr>
+                     <tr>
+                         <td><font color="red">*</font>Productos</td>
+                        <td><select name="NombreSucursal">
+                                 <option>Seleccione...</option>
+                                 <option>Armas</option>
+                                <option>Municiones</option>
+                                <option>Accesorios</option>
+                                
+                                <option></option>
+                            </select></td>
+                    </tr>
+                      
+                     <tr>
+                           <td><font color="red">*</font>Desde</td>
+                          <td><input type="text" name="Desde" value="" /></td>
+                                                  
+                           <td><font color="red">*</font>Hasta</td>
+                          <td><input type="text" name="Hasta" value="" /></td>
+                      </tr>
+                    
+                    
+                    <tr>
                           <td><input type="button" value="Generar" name="GenerarPedido" /></td>
                           <td><input type="submit" value="Cancelar" name="Cancelar" /></td>
                       </tr>
                 </tbody>
             </table>
+        
+        <p>Campos Obligatorios *</p>
+        
         </form>
     
       </div>

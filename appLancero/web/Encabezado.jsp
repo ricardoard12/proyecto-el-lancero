@@ -15,23 +15,23 @@
           <li class="selected"><a href="Inicio.jsp">Inicio</a></li>
           <li><a href="#">Inventario</a>
              <ul>
-                <a href="Armas.jsp">Armas</a>
-                <a href="Municiones.jsp">Municiones</a>
-                <a href="Accesorios.jsp">Accesorios</a>
+                 <li> <a href="Armas.jsp">Armas</a></li>
+                 <li><a href="Municiones.jsp">Municiones</a></li>
+                 <li><a href="Accesorios.jsp">Accesorios</a></li>
              </ul>
           <li><a href="#">Actividad</a>
             <ul>
                 <li><a href="#">Registrar producto</a>
                     <ul>
-                        <a href="RegistrarArma.jsp">Registrar Armas</a>
-                        <a href="RegistrarMunicion.jsp">Registrar Municiones</a>
-                        <a href="RegistrarAccesorio.jsp">Registrar Accesorios</a>
+                        <li><a href="RegistrarArma.jsp">Registrar Armas</a></li>
+                        <li><a href="RegistrarMunicion.jsp">Registrar Municiones</a></li>
+                        <li><a href="RegistrarAccesorio.jsp">Registrar Accesorios</a></li>
                     </ul>
                 <li><a href="#">ModificarProducto</a>
                     <ul>
-                        <a href="ModificarArma.jsp">Modificar Arma</a>
-                        <a href="ModificarMunicion.jsp">Modificar municion</a>
-                        <a href="ModificarAccesorio.jsp">Modificar Accesorio</a>
+                        <li><a href="ModificarArma.jsp">Modificar Arma</a></li>
+                        <li><a href="ModificarMunicion.jsp">Modificar municion</a></li>
+                        <li><a href="ModificarAccesorio.jsp">Modificar Accesorio</a></li>
                     </ul>
                 <li><a href="EliminarProducto.jsp">Eliminar Producto</a>
             </ul>          
@@ -41,6 +41,10 @@
                   <li><a href="ReporteReserva.jsp">Reporte Reserva</a></li>
                   <li><a href="ReporteSucursal.jsp">Reporte Sucursal</a></li>
                   <li><a href="ReporteClientes.jsp">Reporte Cliente</a></li>
+              </ul>
+          <li><a href="#">Config</a>
+              <ul>
+                  <li><a href="Mantenimiento.jsp">Registrar Campos</a></li>
               </ul>
           <li><a href="index.jsp">Cerrar Sesión</a>
           </ul>

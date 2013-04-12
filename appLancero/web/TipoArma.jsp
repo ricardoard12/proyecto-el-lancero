@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -12,7 +13,7 @@
 
 <body>
   <div id="main">
-   <%@include file="Encabezado.jsp"%>
+<%@include file="Encabezado.jsp"%>
     <div id="site_content">
       <ul id="images">
         <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
@@ -24,38 +25,29 @@
       </ul>
       <div id="sidebar_container">
         <div class="sidebar">
-    
+          
         </div>
       </div>
       <div class="content">
-        <h3>Generar Reporte de Reserva</h3>
-        <form action="enviar" method="POST">
-            <table border="0">
-                <tbody>
-                    <tr>
-                        <td>Seleccione producto</td>
-                        <td><select name="NombreSucursal">
-                                <option>Arma</option>
-                                <option>Municion</option>
-                                <option>Accesorio</option>
-                            </select></td>
-                    </tr>
-                    
-                    <tr>
-                          <td>C&oacute;digo</td>
-                          <td><input type="text" name="CodigoArma" value="" /></td>
-                      </tr>                        
-                          <td>Fecha</td>
-                          <td><input type="text" name="Fecha" value="" /></td>
-                      </tr>
-                     
+          <h3>Registrar Tipo de Arma</h3>         
+          <form action="enviar" method="POST">
+              <table border="0">
+                  <tbody>
                       <tr>
-                          <td><input type="button" value="Generar" name="GenerarPedido" /></td>
-                          <td><input type="submit" value="Cancelar" name="Cancelar" /></td>
+                          <td><font color="red">*</font>C&oacute;digo</td>
+                          <td><input type="text" name="CodigoAccesorio" value="" /></td>
                       </tr>
-            </table>
-        </form>
-    
+                      <tr>
+                          <td><font color="red">*</font>Nombre</td>
+                          <td><input type="text" name="NombreMarca" value="" /></td>
+                      </tr>
+                      <tr>
+                          <td><input type="button" value="Guardar"onclick="location.href='RegistrarArma.jsp'" /></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p>Campos Obligatorios *</p>
+          </form>
       </div>
     </div>
     <footer>
