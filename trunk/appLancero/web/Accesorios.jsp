@@ -33,11 +33,17 @@
               <h3>Existencia de Accesorios</h3>
               <table border="0">
                   <tbody>
-                      <tr>
-                          <td>Ingresar codigo</td>
-                          <td><input type="text" name="CantidadAccesorio" value="" /></td>
-                     </tr>
-                      <tr>
+                   <tr>
+                         <td>Sucursal</td>
+                        <td><select name="NombreSucursal">
+                                 <option>Seleccione...</option>
+                                 <option>Casa Matriz</option>
+                                 <option>Col. San Francisco</option>
+                                 <option>Soyapango</option>
+                                 <option>Col. Escal&oacute;n</option>
+                                <option></option>
+                            </select></td>
+                    </tr>
                           <td><input type="submit" value="Mostrar registro" /></td>
                           <td></td>
                       </tr>

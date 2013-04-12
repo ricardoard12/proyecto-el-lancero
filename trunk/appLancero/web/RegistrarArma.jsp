@@ -39,7 +39,13 @@
                       </tr>
                       <tr>
                           <td><font color="red">*</font>Tipo</td>
-                          <td></td>
+                          <td><select name="Tipo">
+                                  <option></option>
+                                  <option></option>
+                                  <option></option>
+                                  <option></option>
+                                  <option></option>
+                              </select></td>
                       </tr>
                       <tr>
                           <td><font color="red">*</font>Marca</td>
