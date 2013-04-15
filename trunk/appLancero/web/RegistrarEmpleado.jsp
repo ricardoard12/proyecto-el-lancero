@@ -198,7 +198,11 @@
                       <tr>
                           <td><font color="red">*</font> Contraseña: </td>
                           <td><input type="password" name="contrasena" value="" /></td>
-                      </tr>                      
+                      </tr>
+                      <tr>
+                          <td><font color="red">*</font> Confirmar Contraseña: </td>
+                          <td><input type="password" name="contrasena" value="" /></td>
+                      </tr> 
                       <tr>
                           <td><input type="button" value="Guardar" name="Guardar" onclick="location.href='index.jsp'" /></td>
                           <td></td>

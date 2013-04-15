@@ -45,6 +45,14 @@
                           <td><input type="text" name="nombre" value="" /> Principal</td>
                       </tr>
                       <tr>
+                          <td>Correo 2: </td>
+                          <td><input type="text" name="nombre" value="" /> Opcional</td>
+                      </tr>
+                      <tr>
+                          <td>Correo 3: </td>
+                          <td><input type="text" name="nombre" value="" /> Opcional</td>
+                      </tr>
+                      <tr>
                           <td><input type="button" value="Guardar" onClick="location.href='registrarse.jsp'"/> </td>
                           <td></td>
                       </tr>
