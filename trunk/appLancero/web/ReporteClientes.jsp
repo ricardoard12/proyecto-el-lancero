@@ -72,10 +72,12 @@
                       
                      <tr>
                            <td><font color="red">*</font>Desde</td>
-                          <td><input type="text" name="Desde" value="" /></td>
-                                                  
+                           <td><input onmouseover= "scwShow(this,event);"/></td>
+                     </tr>
+             
+                     <tr>
                            <td><font color="red">*</font>Hasta</td>
-                          <td><input type="text" name="Hasta" value="" /></td>
+                          <td><input onmouseover= "scwShow(this,event);"/></td>
                       </tr>
                     
                     
@@ -102,6 +104,7 @@
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
   <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
   <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript" src="js/scw.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#images').kwicks({

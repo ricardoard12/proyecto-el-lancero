@@ -68,6 +68,7 @@
   <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
   <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
   <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type='Text/JavaScript' src='js/jquery.scw.js'></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#images').kwicks({
