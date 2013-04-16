@@ -36,4 +36,31 @@ public class Conexion {
         conexion.conectarBaseDatos();
     }
     
+    public admin consultarAdmin(String Usuario, String Contrasena){
+        Statement stmt=null; 
+        ResultSet rs=null; 
+        admin Admin=null; 
+        conectarBaseDatos(); 
+        try{
+            String sql="SELECT * FROM persona WHERE usuario='"+Usuario+"' AND password='"+Contrasena+"'";
+            stmt=(Statement) conn.createStatement(); 
+            rs=stmt.executeQuery(sql); 
+            
+            while (rs.next()){
+               Admin.setUsuario(rs.getString("Usuario"));
+               Admin.setcontrasena(rs.getString("Contrasena"));
+            }
+        } catch(SQLException ex){
+            ex.getMessage();
+        } finally{
+           try{ 
+                if (rs != null) rs.close(); 
+                if (stmt != null) stmt.close(); 
+                if (conn != null) conn.close(); 
+            }catch (SQLException ex){ 
+            }  
+        }
+        return Admin;
+    }
+    
 }

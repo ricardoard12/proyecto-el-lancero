@@ -55,9 +55,7 @@
     </form>
       </div>
     </div>
-    <footer>
-      El Lancero © 2013
-    </footer>
+    <%@include file="PiePagina.jsp"%>
   </div>
   <p>&nbsp;</p>
   <!-- javascript at the bottom for fast page loading -->

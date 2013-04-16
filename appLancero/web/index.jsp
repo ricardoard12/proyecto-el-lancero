@@ -1,4 +1,6 @@
+
 <!DOCTYPE HTML>
+
 <html>
     
 <head>
@@ -38,7 +40,7 @@
       <div id="sidebar_container">
         <div class="sidebar">
           <h3>Acesso</h3>
-          <form action="form" method="POST">
+          <form action="Inicio.jsp" method="POST">
               <table border="0">
                   <tbody>
                       <tr>
@@ -50,7 +52,7 @@
                           <td><input type="password" name="contraseña" value="" /></td>
                       </tr>
                       <tr>
-                          <td><input type="button" value="Ingresar" onclick="location.href='Inicio.jsp'" /></td>
+                          <td><input type="submit" value="Ingresar"  /></td>
                           <td><a href="RegistrarEmpleado.jsp">Registrarse</a></td>
                       </tr>
                   </tbody>
@@ -65,9 +67,7 @@
         <p></p>        
       </div>
     </div>
-    <footer>
-      El Lancero © 2013
-    </footer>
+    <%@include file="PiePagina.jsp"%>
   </div>
   <p>&nbsp;</p>
   <!-- javascript at the bottom for fast page loading -->
