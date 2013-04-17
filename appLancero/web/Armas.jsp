@@ -23,11 +23,6 @@
         <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
         <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
       </ul>
-      <div id="sidebar_container">
-        <div class="sidebar">
-   
-        </div>
-      </div>
       <div class="content">
           <center>
               <h3>Existencia de Armas</h3>
