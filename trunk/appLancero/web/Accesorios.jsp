@@ -1,9 +1,4 @@
-<%@page import="net.sf.jasperreports.engine.JasperRunManager"%>
-<%@page import="java.util.Map"%>
-<%@page import="java.util.HashMap"%>
-<%@page import="java.io.File"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection"%>
+
 <!DOCTYPE HTML>
 <html>
 
@@ -31,32 +26,7 @@
       </ul>
       <div id="sidebar_container">
         <div class="sidebar">
-         <%
-        Connection conn=null;
-        try
-        {
-            Class.forName("com.mysql.jdbc.Driver"); //se carga el driver
-            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/el_lancero", "root", "Hola2013");
-            out.print("conexion CTM! xD");
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-        }
 
-        File reportFile = new File(application.getRealPath("report1.jasper"));
-
-        Map parameters = new HashMap();
-
-        byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath (),parameters,conn);
-
-        response.setContentType("application/pdf");
-        response.setContentLength(bytes.length);
-        ServletOutputStream ouputStream = response.getOutputStream();
-        ouputStream.write(bytes, 0, bytes.length);
-        ouputStream.flush();
-        ouputStream.close();
-        %>
         </div>
       </div>
       <div class="content">
@@ -75,13 +45,10 @@
                                 <option></option>
                             </select></td>
                     </tr>
-                          <td><input type="submit" value="Mostrar registro" onclick/></td>
+                       <tr>
+                          <td><input type="button" value="Mostrar registro" onclick="location.href='ReporteAccesorio.jsp'"/></td>
                           <td></td>
-                      </tr>
-                      <tr>
-                          <td></td>                          
-                          <td></td>                          
-                      </tr>                      
+                      </tr>                  
                   </tbody>
               </table>
           </center>        
