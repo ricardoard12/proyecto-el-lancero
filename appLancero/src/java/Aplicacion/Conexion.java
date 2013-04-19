@@ -17,9 +17,9 @@ public class Conexion {
     public void cargarDriver(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Drver cargado exitosamente");
+            System.out.println("Driver cargado exitosamente");
         }catch(Exception e){
-            System.out.println("Drver no pudo ser cargado");
+            System.out.println("Driver no pudo ser cargado");
         }
     }
     public void conectarBaseDatos(){
@@ -36,13 +36,13 @@ public class Conexion {
         conexion.conectarBaseDatos();
     }
     
-    public admin consultarAdmin(String Usuario, String Contrasena){
+    public boolean consultarAdmin(String Usuario, String Contrasena){
         Statement stmt=null; 
         ResultSet rs=null; 
         admin Admin=null; 
         conectarBaseDatos(); 
         try{
-            String sql="SELECT * FROM persona WHERE usuario='"+Usuario+"' AND password='"+Contrasena+"'";
+            String sql="SELECT * FROM persona WHERE usuario='"+Usuario+"' AND contrasena='"+Contrasena+"'";
             stmt=(Statement) conn.createStatement(); 
             rs=stmt.executeQuery(sql); 
             
@@ -60,7 +60,7 @@ public class Conexion {
             }catch (SQLException ex){ 
             }  
         }
-        return Admin;
+        return false;
     }
     
 }
