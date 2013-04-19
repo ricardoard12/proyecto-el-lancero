@@ -72,12 +72,20 @@
                       
                      <tr>
                            <td><font color="red">*</font>Desde</td>
-                           <td><input onmouseover= "scwShow(this,event);"/></td>
+                        <td><input id='date2' type='text' tabindex='130' /><img
+                                    src='images/scw.gif'
+                                    title='Click Here' alt='Click Here'
+                                    onclick="scwShow(scwID('date2'),event);" /><br/>
+                        </td>
                      </tr>
              
                      <tr>
-                           <td><font color="red">*</font>Hasta</td>
-                          <td><input onmouseover= "scwShow(this,event);"/></td>
+                         <td><font color="red">*</font>Hasta</td>
+                         <td><input id='date3' type='text' tabindex='130' /><img
+                                src='images/scw.gif'
+                                title='Click Here' alt='Click Here'
+                                onclick="scwShow(scwID('date2'),event);" /><br/>
+                        </td>
                       </tr>
                     
                     

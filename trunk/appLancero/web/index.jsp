@@ -40,19 +40,19 @@
       <div id="sidebar_container">
         <div class="sidebar">
           <h3>Acesso</h3>
-          <form action="Inicio.jsp" method="POST">
+          <form action="logueo.jsp" method="POST">
               <table border="0">
                   <tbody>
                       <tr>
                           <td>Usuario: </td>
-                          <td><input type="text" name="usuario" value="" /></td>
+                          <td><input type="text" name="Usuario" value="" /></td>
                       </tr>
                       <tr>
                           <td>Contraseña: </td>
-                          <td><input type="password" name="contraseña" value="" /></td>
+                          <td><input type="password" name="Contrasena" value="" /></td>
                       </tr>
                       <tr>
-                          <td><input type="submit" value="Ingresar"  /></td>
+                          <td><input type="submit" value="Ingresar"/></td>
                           <td><a href="RegistrarEmpleado.jsp">Registrarse</a></td>
                       </tr>
                   </tbody>
