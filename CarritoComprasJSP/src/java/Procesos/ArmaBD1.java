@@ -167,7 +167,7 @@ public class ArmaBD1 {
     }
 
     //Metodo utilizado para obtener todos los productos de nuestra base de datos
-    public static synchronized Arma obtenerProducto(int codigo_arma) {
+    public static synchronized Arma obtenerArma(int codigo_arma) {
         Arma a = new Arma();
         Connection cn = null;
         CallableStatement cl = null;

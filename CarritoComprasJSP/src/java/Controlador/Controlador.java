@@ -5,6 +5,7 @@
 package Controlador;
 
 import Modelo.Arma;
+import Modelo.Inventario;
 import Procesos.ArmaBD1;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -91,48 +92,52 @@ public class Controlador extends HttpServlet {
             throws ServletException, IOException {
         //Obtenemos la sesion actual
         HttpSession sesion = request.getSession();
-        ArrayList<DetalleVenta> carrito;
+        ArrayList<Inventario> carrito;
         //Si no existe la sesion creamos al carrito de cmoras
         if (sesion.getAttribute("carrito") == null) {
-            carrito = new ArrayList<DetalleVenta>();
+            carrito = new ArrayList<Inventario>();
         } else {
-            carrito = (ArrayList<DetalleVenta>) sesion.getAttribute("carrito");
+            carrito = (ArrayList<Inventario>) sesion.getAttribute("carrito");
         }
         //Obtenemos el producto que deseamos añadir al carrito
-        Producto p = ProductoBD.obtenerProducto(Integer.parseInt(request.getParameter("txtCodigo")));
+        Arma a = ArmaBD1.obtenerArma(Integer.parseInt(request.getParameter("txtCodigo_arma")));
         //Creamos un detalle para el carrtio
-        DetalleVenta d = new DetalleVenta();
+        Inventario i = new Inventario();
         //Obtenemos los valores de la caja de texto
-        d.setCodigoProducto(Integer.parseInt(request.getParameter("txtCodigo")));
-        d.setProducto(p);
-        d.setCantidad(Double.parseDouble(request.getParameter("txtCantidad")));
+        i.setCodigo_arma(Integer.parseInt(request.getParameter("txtCodigo_arma")));
+        i.setArma(a);
+        i.setCantidad_inv(String.format(request.getParameter("txtCantidad_inv")));
         //Calculamos el descuento, si es sub detalle es mayor a 50 se le hace
         //un descuento del 5% aca es donde se encuentra la logica del negocio
+       
+        /*
         double subTotal = p.getPrecio() * d.getCantidad();
         if (subTotal > 50) {
             d.setDescuento(subTotal * (5D / 100D));
         } else {
             d.setDescuento(0);
         }
+        */ 
+        
         //Sirva para saber si tenemos agregado el producto al carrito de compras
         int indice = -1;
         //recorremos todo el carrito de compras
-        for (int i = 0; i < carrito.size(); i++) {
-            DetalleVenta det = carrito.get(i);
-            if (det.getCodigoProducto() == p.getCodigoProducto()) {
+        for (int y = 0; y < carrito.size(); y++) {
+            Inventario inv = carrito.get(y);
+            if (inv.getCodigo_arma() == a.getCodigo_arma()) {
                 //Si el producto ya esta en el carrito, obtengo el indice dentro
                 //del arreglo para actualizar al carrito de compras
-                indice = i;
+                indice = y;
                 break;
             }
         }
         if (indice == -1) {
             //Si es -1 es porque voy a registrar
-            carrito.add(d);
+            carrito.add(i);
         } else {
             //Si es otro valor es porque el producto esta en el carrito
             //y vamos actualizar la 
-            carrito.set(indice, d);
+            carrito.set(indice, i);
         }
         //Actualizamos la sesion del carrito de compras
         sesion.setAttribute("carrito", carrito);
@@ -140,6 +145,8 @@ public class Controlador extends HttpServlet {
         response.sendRedirect("registrarVenta.jsp");
     }
     //Metodo que sirve para registrar toda la venta en la base de datos
+    
+    /*
     private void registrarVenta(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession sesion = request.getSession();
@@ -153,4 +160,5 @@ public class Controlador extends HttpServlet {
             response.sendRedirect("mensaje.jsp?men=No se registro la venta");
         }
     }
+    */
 }
