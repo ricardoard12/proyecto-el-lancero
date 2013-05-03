@@ -14,14 +14,7 @@
   <div id="main">
    <%@include file="Encabezado.jsp"%>
     <div id="site_content">
-      <ul id="images">
-        <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
-        <li><img src="images/2.jpg" width="600" height="300" alt="seascape_two" /></li>
-        <li><img src="images/3.jpg" width="600" height="300" alt="seascape_three" /></li>
-        <li><img src="images/4.jpg" width="600" height="300" alt="seascape_four" /></li>
-        <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
-        <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
-      </ul>
+      
       <div id="sidebar_container">
         <div class="sidebar">
     
@@ -72,20 +65,12 @@
                       
                      <tr>
                            <td><font color="red">*</font>Desde</td>
-                        <td><input id='date2' type='text' tabindex='130' /><img
-                                    src='images/scw.gif'
-                                    title='Click Here' alt='Click Here'
-                                    onclick="scwShow(scwID('date2'),event);" /><br/>
-                        </td>
+                           <td><input onmouseover= "scwShow(this,event);"/></td>
                      </tr>
              
                      <tr>
-                         <td><font color="red">*</font>Hasta</td>
-                         <td><input id='date3' type='text' tabindex='130' /><img
-                                src='images/scw.gif'
-                                title='Click Here' alt='Click Here'
-                                onclick="scwShow(scwID('date2'),event);" /><br/>
-                        </td>
+                           <td><font color="red">*</font>Hasta</td>
+                          <td><input onmouseover= "scwShow(this,event);"/></td>
                       </tr>
                     
                     

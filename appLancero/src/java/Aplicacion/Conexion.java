@@ -24,7 +24,7 @@ public class Conexion {
     }
     public void conectarBaseDatos(){
         try{
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/el_lancero", "root", "Hola2013");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/el_lancero", "root", "DBD2");
             System.out.println("Conexion satisfactoria a la base de datos");
         }catch(Exception e){
             System.out.println("Conexion a la base de datos no se pudo establecer");
@@ -36,7 +36,7 @@ public class Conexion {
         conexion.conectarBaseDatos();
     }
     
-    public boolean consultarAdmin(String Usuario, String Contrasena){
+    public admin consultarAdmin(String Usuario, String Contrasena){
         Statement stmt=null; 
         ResultSet rs=null; 
         admin Admin=null; 
@@ -60,7 +60,7 @@ public class Conexion {
             }catch (SQLException ex){ 
             }  
         }
-        return false;
+        return Admin;
     }
     
 }

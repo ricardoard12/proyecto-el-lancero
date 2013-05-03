@@ -15,9 +15,9 @@
           <li class="selected"><a href="Inicio.jsp">Inicio</a></li>
           <li><a href="#">Inventario</a>
              <ul>
-                 <li> <a href="Armas.jsp">Armas</a></li>
-                 <li><a href="Municiones.jsp">Municiones</a></li>
-                 <li><a href="Accesorios.jsp">Accesorios</a></li>
+                 <li> <a href="Armas_1.jsp">Armas</a></li>
+                 <li><a href="Municiones_1.jsp">Municiones</a></li>
+                 <li><a href="Accesorios_1.jsp">Accesorios</a></li>
              </ul>
           <li><a href="#">Actividad</a>
             <ul>
