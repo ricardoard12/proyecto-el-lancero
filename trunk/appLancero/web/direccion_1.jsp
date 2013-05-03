@@ -27,30 +27,15 @@
       </nav>
     </header>
     <div id="site_content">
-      <ul id="images">
-        <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
-        <li><img src="images/2.jpg" width="600" height="300" alt="seascape_two" /></li>
-        <li><img src="images/3.jpg" width="600" height="300" alt="seascape_three" /></li>
-        <li><img src="images/4.jpg" width="600" height="300" alt="seascape_four" /></li>
-        <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
-        <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
-      </ul>      
+           
       <div class="content">
-          <h3>Ingresar Correo</h3>         
+          <h3>Ingresar Dirección</h3>         
           <form action="enviar" method="POST">
               <table border="0">
                   <tbody>
                       <tr>
-                          <td>Correo 1: </td>
+                          <td>Direccion 1: </td>
                           <td><input type="text" name="nombre" value="" /> Principal</td>
-                      </tr>
-                      <tr>
-                          <td>Correo 2: </td>
-                          <td><input type="text" name="nombre" value="" /> Opcional</td>
-                      </tr>
-                      <tr>
-                          <td>Correo 3: </td>
-                          <td><input type="text" name="nombre" value="" /> Opcional</td>
                       </tr>
                       <tr>
                           <td><input type="button" value="Guardar" onClick="location.href='registrarse.jsp'"/> </td>
