@@ -1,15 +1,19 @@
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
+
 <%
 
-  session.invalidate();//destruye la session
+  
+   String apellidos = (String) session.getAttribute("ape");//Recoge la session
+   String nombres = (String) session.getAttribute("nom");//Recoge la session
+   String usuario = (String) session.getAttribute("usu");//Recoge la session
+   String rol = (String) session.getAttribute("rol");//Recoge la session
+
 %>
 
-
 <html>
+    
 <head>
   <title>El Lancero</title>
   <meta name="description" content="website description" />
@@ -21,9 +25,9 @@
 </head>
 
 <body>
-  
+    <h3><center><%=rol%>: <%=nombres%> <%=apellidos%> Usuario: <%=usuario%></center></h3>
   <div id="main">
-   <%@include file="Encabezado2.jsp"%>
+   <%@include file="Encabezado.jsp"%>
     <div id="site_content">
       <ul id="images">
         <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
@@ -39,12 +43,10 @@
         </div>
       </div>
       <div class="content">
-        
+        <h1>Bienvenido</h1>
+        <p>Sistema de control y manejo de inventario El Lancero S.A de C.V</p>
         <p></p>
-        <p></p>
-        <h1>A ABANDONADO LA SESION, PARA INGRESAR NUEVAMENTE CLICK <a href="index.jsp">Aqui</a></h1>
-        <p></p>
-        <p></p>
+        <p></p>        
       </div>
     </div>
     <footer>
@@ -68,15 +70,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,15 +1,6 @@
-
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-<%
-
-  session.invalidate();//destruye la session
-%>
-
-
+<!DOCTYPE HTML>
 <html>
+
 <head>
   <title>El Lancero</title>
   <meta name="description" content="website description" />
@@ -21,9 +12,20 @@
 </head>
 
 <body>
-  
   <div id="main">
-   <%@include file="Encabezado2.jsp"%>
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">El Lancero<span class="logo_colour"> Armas, Accesorios y Más</span></a></h1>
+          <h2>El Salvador</h2>
+        </div>
+      </div>
+      <nav>        
+          <ul class="sf-menu" id="nav">           
+          </ul>        
+      </nav>
+    </header>
     <div id="site_content">
       <ul id="images">
         <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
@@ -32,23 +34,27 @@
         <li><img src="images/4.jpg" width="600" height="300" alt="seascape_four" /></li>
         <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
         <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
-      </ul>
-      <div id="sidebar_container">
-        <div class="sidebar">
-
-        </div>
-      </div>
+      </ul>      
       <div class="content">
-        
-        <p></p>
-        <p></p>
-        <h1>A ABANDONADO LA SESION, PARA INGRESAR NUEVAMENTE CLICK <a href="index.jsp">Aqui</a></h1>
-        <p></p>
-        <p></p>
+          <h3>Ingresar Dirección</h3>         
+          <form action="enviar" method="POST">
+              <table border="0">
+                  <tbody>
+                      <tr>
+                          <td>Direccion 1: </td>
+                          <td><input type="text" name="nombre" value="" /> Principal</td>
+                      </tr>
+                      <tr>
+                          <td><input type="button" value="Guardar" onClick="location.href='registrarse.jsp'"/> </td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>          
+          </form>
       </div>
     </div>
     <footer>
-      El Lancero Â© 2013
+      El Lancero © 2013
     </footer>
   </div>
   <p>&nbsp;</p>
@@ -68,15 +74,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

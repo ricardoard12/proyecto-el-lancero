@@ -1,15 +1,6 @@
-
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-<%
-
-  session.invalidate();//destruye la session
-%>
-
-
+<!DOCTYPE HTML>
 <html>
+    
 <head>
   <title>El Lancero</title>
   <meta name="description" content="website description" />
@@ -21,34 +12,20 @@
 </head>
 
 <body>
-  
   <div id="main">
-   <%@include file="Encabezado2.jsp"%>
-    <div id="site_content">
-      <ul id="images">
-        <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
-        <li><img src="images/2.jpg" width="600" height="300" alt="seascape_two" /></li>
-        <li><img src="images/3.jpg" width="600" height="300" alt="seascape_three" /></li>
-        <li><img src="images/4.jpg" width="600" height="300" alt="seascape_four" /></li>
-        <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
-        <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
-      </ul>
+   <%@include file="Encabezado.jsp"%>
+    <div id="site_content">     
       <div id="sidebar_container">
         <div class="sidebar">
-
+            <%@include file="listaMantenimientos.jsp" %>
         </div>
       </div>
       <div class="content">
-        
-        <p></p>
-        <p></p>
-        <h1>A ABANDONADO LA SESION, PARA INGRESAR NUEVAMENTE CLICK <a href="index.jsp">Aqui</a></h1>
-        <p></p>
-        <p></p>
+        <h1>Mantenimientos</h1>     
       </div>
     </div>
     <footer>
-      El Lancero Â© 2013
+      El Lancero © 2013
     </footer>
   </div>
   <p>&nbsp;</p>
@@ -68,15 +45,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
