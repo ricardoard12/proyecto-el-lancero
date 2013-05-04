@@ -1,50 +1,55 @@
-
+<%-- 
+    Document   : Departamento
+    Created on : 04-05-2013, 02:34:10 PM
+    Author     : Reyes
+--%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-<%
-
-  session.invalidate();//destruye la session
-%>
-
-
+<!DOCTYPE html>
 <html>
+    
 <head>
   <title>El Lancero</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 </head>
 
-<body>
-  
+<body><center>
   <div id="main">
-   <%@include file="Encabezado2.jsp"%>
+
     <div id="site_content">
       <ul id="images">
-        <li><img src="images/1.jpg" width="600" height="300" alt="seascape_one" /></li>
-        <li><img src="images/2.jpg" width="600" height="300" alt="seascape_two" /></li>
-        <li><img src="images/3.jpg" width="600" height="300" alt="seascape_three" /></li>
-        <li><img src="images/4.jpg" width="600" height="300" alt="seascape_four" /></li>
-        <li><img src="images/5.jpg" width="600" height="300" alt="seascape_five" /></li>
-        <li><img src="images/6.jpg" width="600" height="300" alt="seascape_seascape" /></li>
+
       </ul>
       <div id="sidebar_container">
         <div class="sidebar">
-
+      
         </div>
       </div>
       <div class="content">
-        
-        <p></p>
-        <p></p>
-        <h1>A ABANDONADO LA SESION, PARA INGRESAR NUEVAMENTE CLICK <a href="index.jsp">Aqui</a></h1>
-        <p></p>
-        <p></p>
+          <center>   <h3>Mantenimiento Marca</h3></center>
+        <center> <form action="enviar" method="POST">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td>C&oacute;digo</td>
+                    <td><input type="text" name="CodigoDepartamento" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="CodigoProducto" value="" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Guardar" /></td>
+                    <td><input type="button" value="Cancelar" onclick="location.href='../Mantenimiento.jsp'"/></td>
+                </tr>
+            </tbody>
+        </table>      
+            </form></center>
       </div>
     </div>
     <footer>
@@ -66,17 +71,6 @@
       $('ul.sf-menu').sooperfish();
     });
   </script>
-</body>
+   </center> </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
 

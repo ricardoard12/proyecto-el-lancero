@@ -89,7 +89,7 @@ public class ingreso extends HttpServlet {
                 session.setAttribute("usu", usuar);
                 session.setAttribute("rol", rol);
                 //pagina a donde se enviara si se encuentra el usuario autenticado
-                response.sendRedirect("principal.jsp");
+                response.sendRedirect("Inicio.jsp");
 
             }
             
